@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+body{
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+html{
+    scroll-behavior: smooth;
+}
+.hidden{
+    display: none;
+}
+img{
+    max-width: 100%;
+}
+.section{
+    background-color: #ccc;
+    min-height: 100vh;
+    opacity: 1;
+    overflow-x: hidden;
+    display: none;
+    padding-bottom: 75px;
+}
+.active{
+    display: block;
+    /* z-index: 100; */
+}
+.container{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: auto;
+}
+.row{
+    display: grid;
+    gap: 15px ;
+    grid-template-columns: repeat(3,32%);
+    justify-content: center;
+}
+@media (max-width: 576px){
+    .row {
+        display: block;
+    }
+}
+/* Start aside */
+.aside{
+    background-color: rgb(72, 209, 72);
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0px;
+    z-index: 25;
+    padding: 8px 8px 0;
+    box-shadow: 5px 0px 0px 0 green;
+    transition: 0.5s;
+    width: 80%;
+}
+
+.nav{
+    text-align: center;
+    position: relative;
+    box-shadow: inset 12px -10px 8px 0px green;
+    height: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+.aside .nav .btn{
+    content: '';
+    border: 10px solid;
+    border-color: transparent transparent black transparent;
+    position: absolute;
+    top: -44px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+.aside h3{
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 11px 13px 0px 0px green;
+}
+.aside .nav ul li{
+    padding: 0 15px;
+    margin-bottom: 5px;
+    list-style: none;
+    color: #000;
+    font-weight: bold;
+    display : inline-block;
+}
+@media (max-width: 576px){
+    .aside .nav{
+        text-align: start;
+    }
+    .aside .nav ul li{
+        display: block;
+        margin: 0;
+        font-size: 15px;
+        padding: 5px;
+    }
+}
+
+.show{
+    height: auto;
+    padding: 7px 30px 10px;
+    opacity: 1;
+}
+/* End aside */
+.home{
+    position: relative;
+    background-image: url('../images/background.jpg');
+}
+.home .intro{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    transform: translate(-50% , -50%);
+}
+
+
+@media (min-width: 576px){
+        .container {
+            max-width: 540px;
+        }
+}
+
+@media (min-width: 768px){
+        .container {
+            max-width: 720px;
+        }
+}
+@media (min-width: 992px){
+    .container {
+        max-width: 960px;
+    }
+}

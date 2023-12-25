@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- Normalize file -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+    <div class="main-container">
+        <!-- ==== Navigation bar =====-->
+        <div class="aside">
+            <h3>MENU</h3>
+            <div class="nav">
+                <div class="btn"></div>
+                <ul>
+                    <li class="nav-item" data-section="home">
+                    <a class="nav-link"  href="#home" data-section=".home" >Home</a>
+                    </li>
+                    <li class="nav-item" data-section="coffe">
+                    <a class="nav-link" href="#coffe" data-section=".places" >Coffe Places</a>
+                    </li>
+                    <li class="nav-item" data-section="places">
+                    <a class="nav-link" href="#places" data-section=".places" >breakfast Places</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- ====End Nav -->
+        <!-- ====Start main content -->
+        <div class="main-content">
+            <!-- ===Home Section start -->
+            <section class="home section active" id="home">
+                        <div class="intro">
+                            <h1>Lorem ipsum dolor sit.</h1>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+            </section>
+            <!-- ===Home Section End -->
+            <!-- ===About Section Start -->
+            <section class="places section" id="coffe">
+                <div class="">
+                    <div class="banner">
+                        <img src="images/banner4.jpg" alt="" srcset="">
+                    </div>
+                </div>
+                <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <div class="pic">
+                                <img src="images/cofe1.jpg" class="rounded" alt="" srcset="">
+                            </div>
+                            <div class="card-body mt-2">
+                                <h5 class="card-title">caffe name</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Location</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="pic">
+                                <img src="images/cofe2.jpg" class="rounded" alt="" srcset="">
+                            </div>
+                            <div class="card-body mt-2">
+                                <h5 class="card-title">caffe name</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Location</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="pic">
+                                <img src="images/cofe2.jpg" class="rounded" alt="" srcset="">
+                            </div>
+                            <div class="card-body mt-2">
+                                <h5 class="card-title">caffe name</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Location</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+            <!-- ===About Section End -->
+            
+        </div>
+        <!-- ====End main content -->
+        
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
